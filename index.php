@@ -34,7 +34,28 @@
       </div>
     </div>
   </nav>
-  <h1>Bem vindo ao sistema de cadastro de usuário!</h1>
+  
+  <?php 
+    include("config.php");
+    switch (@$_REQUEST['page']) {
+      case 'novo':
+        include('novo-usuario.php');
+        break;
+      case 'listar':
+        include('listar-usuario.php');
+        break;
+      case 'salvar':
+        include('salvar-usuario.php');
+        break;
+      case 'editar':
+        include('editar-usuario.php');
+        break;
+      default:
+        print "<h1>Bem vindo ao sistema de cadastro de usuário!</h1>";
+        break;
+    }
+  
+  ?>
 </body>
 
 </html>
