@@ -18,5 +18,5 @@
     <label class="form-label">Data nascimento</label>
     <input type="date" class="form-control" name="data_nasc" required>
   </div>
-  <button type="submit" class="btn btn-primary">Cadastrar</button>
+  <button type="submit" class="btn btn-primary"><i class='fas fa-plus'></i>   Cadastrar</button>
 </form>
